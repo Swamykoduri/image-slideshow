@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(76, 162, 247);
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  overflow: hidden; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.photo-gallery{
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn{
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  color: azure;
+  transform: translateY(-50%);   
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.btn.next {
+  right: 10px;
+}
+
+.btn.prev{
+  left: 10px;
+}
+
+.btn:hover{
+  opacity: 1;
+}
